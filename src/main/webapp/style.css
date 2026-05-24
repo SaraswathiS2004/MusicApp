@@ -1,0 +1,122 @@
+       * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            height: 60px;
+            background-color: #4b2d73;
+            color: white;
+            text-align: center;
+            font-size: 32px;
+            line-height: 60px;
+        }
+
+        /* MAIN GRID */
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            padding: 40px;
+        }
+
+        /* CARD STYLE FOR ALL SPANS */
+       .container span {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   /* 🔥 vertical center */
+    height: 100%;
+    min-height: 250px;
+}
+
+        /* TOP LEFT + TOP RIGHT AUTO */
+        .container span:nth-child(1),
+        .container span:nth-child(2) {
+            grid-column: auto;
+        }
+
+        /* BOTTOM FULL WIDTH */
+        .container span:nth-child(3) {
+            grid-column: 1 / span 2;
+        }
+
+        /* TEXT */
+        #todayMood {
+            font-size: 20px;
+        }
+
+        #p1 {
+            font-size: 28px;
+            color: blue;
+        }
+
+        /* FORM */
+        #form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #form input,
+        #form select,
+        #form button {
+            margin-top: 8px;
+            margin-bottom: 12px;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid gray;
+        }
+
+        #form button {
+            background-color: #4b2d73;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* RIGHT SECTION */
+        .container2 {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        #music img {
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        #song img {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 10px;
+        }
+
+        #song {
+            width: 300px;
+        }
+
+        #user_name {
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+
+        #mood {
+            font-size: 14px;
+            color: gray;
+            margin-bottom: 10px;
+        }
+        #box2{
+            background-color: #4b2d73;
+        }
+        #song p{
+            color: white;
+        }

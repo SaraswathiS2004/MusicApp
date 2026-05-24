@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music App</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body onload="checkMusic()">
+
+<nav>Music App</nav>
+
+<div class="container">
+
+    <!-- TOP LEFT -->
+    <span id="today">
+            <h2 style="font-size: 28px; margin-bottom: 10px;">
+                How are you feeling
+            </h2>
+
+            <h1 style="font-size: 40px; color: #4b2d73;">
+                today !
+            </h1>
+
+            <p style="margin-top: 15px; font-size: 16px; color: gray;">
+                We will find the perfect music for you based on your mood and preferences.
+            </p>
+        </span>
+
+    <!-- TOP RIGHT FORM -->
+    <span id="form">
+            <label>Enter Your Name</label>
+            <input id = "name" type="text" placeholder="Saraswathi" required>
+
+            <label>Select Your Mood</label>
+            <select id = "moodSelect" required>
+                <option>Happy</option>
+                <option>Relax</option>
+                <option>Energetic</option>
+                <option>Sad</option>
+            </select>
+
+            <label>Favorite Artist</label>
+            <select id = "artist" required>
+                <option>Aniruth</option>
+                <option>A.R.Rahman</option>
+                <option>hip hop Thamizha</option>
+                <option>Pradeep kumar</option>
+            </select>
+        <!-- <input id = "artist" type ="text" placeholder="Enter Favourite Artist" required> -->
+
+            <button type="submit" onclick="findMusic()">Find My Music</button>
+        </span>
+
+    <span id="box2" style = "display: none;">
+            <div class="container2">
+
+                <div id="music">
+                    <img src="music.webp" alt="music">
+                </div>
+
+                <div id="song">
+                    <p id="user_name">Hello </p>
+                    <p id="mood">Your mood is </p>
+                    <img src="music.webp" alt="song">
+                    <p><b>Recommended Song For You</b></p>
+                    <p id ="songName">Jai Ho</p>
+                    <p id ="artistName">by </p>
+                </div>
+
+            </div>
+        </span>
+</div>
+<script src="script.js"></script>
+</body>
+
+</html>
